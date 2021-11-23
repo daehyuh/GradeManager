@@ -5,8 +5,8 @@ CREATE TABLE TEACHER_TABLE(
                               PRIMARY KEY(TEACHER_NUMBER) --선생님 사번 PK로
 );
 
-INSERT INTO TEACHER_TABLE VALUES(101,'김채현'); --교사 테스트 데이터1
-INSERT INTO TEACHER_TABLE VALUES(102,'황정숙'); --교사 테스트 데이터2
+INSERT INTO TEACHER_TABLE VALUES(101,'김재연'); --교사 테스트 데이터1
+INSERT INTO TEACHER_TABLE VALUES(102,'황진죽'); --교사 테스트 데이터2
 COMMIT;
 
 SELECT * FROM TEACHER_TABLE;
@@ -19,7 +19,7 @@ CREATE TABLE STUDENT_TABLE(
                               TEACHER_NUMBER NUMBER(5),
                               PRIMARY KEY(STUDENT_NUMBER),
                               FOREIGN KEY(TEACHER_NUMBER)
-                                  REFERENCES TEACHER_TABLE(TEACHER_NUMBER)
+                              REFERENCES TEACHER_TABLE(TEACHER_NUMBER)
 );
 -----------------------------------------------
 
