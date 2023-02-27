@@ -1,4 +1,3 @@
 # GradeManager
 
-
-just study code
+ 자바CURD 구현
